@@ -26,11 +26,12 @@ a {
 }
 
 body {
-  font-family: var(--font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1;
-  background: #000;
+  font-family: var(--font-family-1);
+  // font-size: 1.6rem;
+  // font-weight: 400;
+  // line-height: 1;
+  color: var(--color-font);
+  background: var(--color-bg);
 }
 body::after {
   content: "";
@@ -40,13 +41,13 @@ body::after {
   width: 1px;
   height: 100vh;
   background: green;
-  display: block;
+  display: none;
   z-index: 1;
 }
 input,
 button,
 textarea {
-  font-family: var(--font-family);
+  font-family: var(--font-family-1);
 }
 button {
   cursor: pointer;
@@ -65,19 +66,19 @@ p {
   padding: 0;
 }
 .title {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: normal;
-  color: #fff;
+  // font-size: 3rem;
+  // font-weight: 700;
+  // line-height: normal;
+  // color: #fff;
 }
 .text {
-  text-align: justify;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #fff;
+  // text-align: justify;
+  // font-size: 1.6rem;
+  // line-height: 1.5;
+  // color: #fff;
 }
 .text p {
-  margin-bottom: 1rem;
+  // margin-bottom: 1rem;
 }
 
 .hidden {
@@ -86,7 +87,13 @@ p {
 
 .container {
   margin: 0 auto;
-  max-width: 1860px;
+  max-width: 1830px;
+  padding: 0 15px;
+}
+
+.container--small {
+  margin: 0 auto;
+  max-width: 1140px;
   padding: 0 15px;
 }
 
