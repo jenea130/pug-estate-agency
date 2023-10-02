@@ -1,0 +1,40 @@
+.main-header {
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 15.2rem;
+  }
+  &__menu {
+    margin-right: auto;
+  }
+  &__btn {
+    & a {
+      color: #000;
+    }
+  }
+  &__lang {
+    margin-left: 11.9rem;
+    font-family: var(--font-family-2);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    span:not(:first-child) {
+      margin-left: 0.8rem;
+    }
+    & .active {
+      color: var(--accent);
+    }
+  }
+  &__tel {
+    margin-left: 5.3rem;
+    a {
+      font-family: var(--font-family-2);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
