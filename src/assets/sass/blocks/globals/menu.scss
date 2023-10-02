@@ -17,8 +17,6 @@
       top: 50%;
       right: -1.6rem;
       transform: translateY(-50%);
-      width: 0;
-      height: 0;
       border-style: solid;
       border-width: 0.5rem 0.5rem 0 0.5rem;
       border-color: #fff transparent transparent transparent;
@@ -49,19 +47,19 @@
     position: relative;
     &:hover .menu__sub-menu {
       // opacity: 1;
-      display: block;
-      pointer-events: initial;
+      // display: block;
+      // pointer-events: initial;
     }
   }
   &__sub-menu {
     position: absolute;
-    top: 1.8rem;
+    top: 3rem;
     left: 2.2rem;
     width: 24.7rem;
     background: var(--color-bg);
     // opacity: 0;
     display: none;
-    pointer-events: none;
+    // pointer-events: none;
     border: 1px solid #979797;
     background: var(--color-bg);
     & a {
