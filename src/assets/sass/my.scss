@@ -1,10 +1,15 @@
 @import "partials/fonts";
 @import "partials/variables";
 @import "partials/mixins";
-@import "../libs/slick/slick/slick.scss";
 @import "partials/base";
+@import "../libs/slick.css";
+
 
 
 // globals
 @import "blocks/globals/menu";
 @import "blocks/globals/main-header";
+@import "blocks/globals/sandwich";
+
+
+@import "blocks/home/home-intro";

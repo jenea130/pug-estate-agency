@@ -8,7 +8,9 @@ block title
 
 block content
 	include ../globals/main-header
-	h1 Home page
+	include ../blocks/home/home-intro
 
 block scripts
+	script(src="assets/libs/code.jquery.com_jquery-3.7.0.min.js")
+	script(src="assets/libs/slick.min.js")
 	script(src="assets/js/dist/webpack.js")

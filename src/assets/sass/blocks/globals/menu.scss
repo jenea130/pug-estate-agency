@@ -4,7 +4,7 @@
   }
   &__link {
     position: relative;
-    margin: 0 2.4rem;
+    margin: 0 2.5rem;
     font-family: var(--font-family-2);
     font-size: 1.4rem;
     font-weight: 600;
@@ -76,6 +76,36 @@
     & a:hover {
       color: var(--color-bg);
       background: var(--accent);
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__list {
+      position: fixed;
+      top: 18.2rem;
+      left: 40%;
+      width: 30%;
+      // height: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      background: var(--color-bg);
+      opacity: 0;
+      pointer-events: none;
+      &.fixed {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+    &__item {
+      padding: 2rem 0;
+    }
+    & a {
+      font-family: var(--font-family-2);
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: normal;
+      color: #fff;
+      text-transform: uppercase;
     }
   }
 }
