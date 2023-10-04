@@ -1,7 +1,13 @@
 .home-intro {
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
   &__img {
     position: relative;
     height: 97.1rem;
+    z-index: 2;
+    opacity: .5;
     img {
       position: absolute;
       top: 0;
@@ -12,12 +18,12 @@
     }
   }
   &__content {
-    position: relative;
+    position: absolute;
     top: 33.1%;
     left: 21.3%;
     width: 74.1rem;
     color: white;
-    z-index: 2;
+    z-index: 3;
     &::before {
       content: "";
       position: absolute;
@@ -61,9 +67,10 @@
   }
   &__footer {
     position: absolute;
-    bottom: 4.5rem;
+    top: 80%;
     left: 25%;
-    z-index: 3;
+    z-index: 30;
+    cursor: pointer;
     span {
       padding: 0 1.9rem;
       display: inline-block;
@@ -85,10 +92,10 @@
   &__body {
     position: relative;
     bottom: 14.9rem;
-    z-index: 3;
     display: flex;
     justify-content: flex-end;
     height: 15rem;
+    z-index: 3;
   }
   &__item {
     display: flex;

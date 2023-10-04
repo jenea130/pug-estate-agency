@@ -509,9 +509,16 @@ input[type="submit"]:disabled {
   background: #fff;
 }
 
+.home-intro__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
 .home-intro__img {
   position: relative;
   height: 97.1rem;
+  z-index: 2;
+  opacity: .5;
 }
 
 .home-intro__img img {
@@ -525,12 +532,12 @@ input[type="submit"]:disabled {
 }
 
 .home-intro__content {
-  position: relative;
+  position: absolute;
   top: 33.1%;
   left: 21.3%;
   width: 74.1rem;
   color: white;
-  z-index: 2;
+  z-index: 3;
 }
 
 .home-intro__content::before {
@@ -580,9 +587,10 @@ input[type="submit"]:disabled {
 
 .home-intro__footer {
   position: absolute;
-  bottom: 4.5rem;
+  top: 80%;
   left: 25%;
-  z-index: 3;
+  z-index: 30;
+  cursor: pointer;
 }
 
 .home-intro__footer span {
@@ -608,10 +616,10 @@ input[type="submit"]:disabled {
 .home-intro__body {
   position: relative;
   bottom: 14.9rem;
-  z-index: 3;
   display: flex;
   justify-content: flex-end;
   height: 15rem;
+  z-index: 3;
 }
 
 .home-intro__item {
