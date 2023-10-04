@@ -40,7 +40,7 @@
   }
   &__title {
     margin-bottom: 3.1rem;
-    font-family: 'Space Grotesk';
+    font-family: "Space Grotesk";
     font-size: 9.6rem;
     font-weight: 700;
     line-height: 1;
@@ -67,7 +67,7 @@
     span {
       padding: 0 1.9rem;
       display: inline-block;
-      font-family: var(--font-family-2);
+      font-family: var(--font-2);
       font-size: 2rem;
       font-weight: 700;
       line-height: 2.4rem;
@@ -99,12 +99,12 @@
     background: var(--color-bg);
   }
   &__number {
-    font-family: var(--font-family-2);
+    font-family: var(--font-2);
     font-size: 6rem;
     font-weight: 700;
     color: #fff;
     &.active {
-        color: var(--accent);
+      color: var(--accent);
     }
   }
   &__text {

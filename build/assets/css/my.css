@@ -89,8 +89,8 @@
 }
 
 :root {
-  --font-family-1: 'Work Sans';
-  --font-family-2: 'Gilroy';
+  --font-1: 'Work Sans';
+  --font-2: 'Gilroy';
   --text-light: #e8e8e8;
   --text-gray: #929292;
   --accent: #FCD54C;
@@ -139,7 +139,9 @@ a {
 }
 
 body {
-  font-family: var(--font-family-1);
+  font-family: var(--font-1);
+  font-weight: 400;
+  line-height: 1;
   color: var(--text-light);
   background: var(--color-bg);
 }
@@ -159,7 +161,7 @@ body::after {
 input,
 button,
 textarea {
-  font-family: var(--font-family-1);
+  font-family: var(--font-1);
 }
 
 button {
@@ -187,12 +189,18 @@ p {
   align-items: center;
   text-align: center;
   height: 4rem;
-  font-family: var(--font-family-1);
+  font-family: var(--font-1);
   font-size: 1.4rem;
   font-weight: 600;
   line-height: normal;
   color: #000;
   background: var(--accent);
+}
+
+.btn:hover {
+  color: var(--accent);
+  background: var(--color-bg);
+  border: 1px solid var(--accent);
 }
 
 .hidden {
@@ -224,10 +232,14 @@ input[type="submit"]:disabled {
   display: flex;
 }
 
+.menu__list > li {
+  padding: 2rem 0 2rem;
+}
+
 .menu__link {
   position: relative;
   margin: 0 2.5rem;
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 1.4rem;
   font-weight: 600;
   color: white;
@@ -274,13 +286,17 @@ input[type="submit"]:disabled {
   position: relative;
 }
 
+.menu__has-children:hover .menu__sub-menu {
+  opacity: 1;
+}
+
 .menu__sub-menu {
   position: absolute;
-  top: 3rem;
+  top: 90%;
   left: 2.2rem;
   width: 24.7rem;
   background: var(--color-bg);
-  display: none;
+  opacity: 0;
   border: 1px solid #979797;
   background: var(--color-bg);
 }
@@ -288,7 +304,7 @@ input[type="submit"]:disabled {
 .menu__sub-menu a {
   padding: 1rem 2rem;
   display: block;
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -323,7 +339,7 @@ input[type="submit"]:disabled {
     padding: 2rem 0;
   }
   .menu a {
-    font-family: var(--font-family-2);
+    font-family: var(--font-2);
     font-size: 3.6rem;
     font-weight: 600;
     line-height: normal;
@@ -372,7 +388,7 @@ input[type="submit"]:disabled {
   position: relative;
   z-index: 1;
   margin-left: 11.9rem;
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-gray);
@@ -393,21 +409,28 @@ input[type="submit"]:disabled {
   }
 }
 
-.main-header__tel {
+.main-header__phone {
   position: relative;
   z-index: 1;
   margin-left: 5.3rem;
-}
-
-.main-header__tel a {
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
 }
 
+.main-header__phone:hover {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 992px) {
+  .main-header__phone {
+    margin-right: 2.7rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .main-header__tel {
+  .main-header__phone {
     margin-left: 2.2rem;
   }
   .main-header__lang {
@@ -522,7 +545,7 @@ input[type="submit"]:disabled {
 
 .home-intro__title {
   margin-bottom: 3.1rem;
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-size: 9.6rem;
   font-weight: 700;
   line-height: 1;
@@ -555,7 +578,7 @@ input[type="submit"]:disabled {
 .home-intro__footer span {
   padding: 0 1.9rem;
   display: inline-block;
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.4rem;
@@ -591,7 +614,7 @@ input[type="submit"]:disabled {
 }
 
 .home-intro__number {
-  font-family: var(--font-family-2);
+  font-family: var(--font-2);
   font-size: 6rem;
   font-weight: 700;
   color: #fff;

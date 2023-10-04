@@ -1,11 +1,14 @@
 .menu {
   &__list {
     display: flex;
+    & > li {
+      padding: 2rem 0 2rem;
+    }
   }
   &__link {
     position: relative;
     margin: 0 2.5rem;
-    font-family: var(--font-family-2);
+    font-family: var(--font-2);
     font-size: 1.4rem;
     font-weight: 600;
     color: white;
@@ -46,26 +49,24 @@
   &__has-children {
     position: relative;
     &:hover .menu__sub-menu {
-      // opacity: 1;
-      // display: block;
+      opacity: 1;
       // pointer-events: initial;
     }
   }
   &__sub-menu {
     position: absolute;
-    top: 3rem;
+    top: 90%;
     left: 2.2rem;
     width: 24.7rem;
     background: var(--color-bg);
-    // opacity: 0;
-    display: none;
+    opacity: 0;
     // pointer-events: none;
     border: 1px solid #979797;
     background: var(--color-bg);
     & a {
       padding: 1rem 2rem;
       display: block;
-      font-family: var(--font-family-2);
+      font-family: var(--font-2);
       font-size: 14px;
       font-style: normal;
       font-weight: 600;
@@ -100,7 +101,7 @@
       padding: 2rem 0;
     }
     & a {
-      font-family: var(--font-family-2);
+      font-family: var(--font-2);
       font-size: 3.6rem;
       font-weight: 600;
       line-height: normal;
