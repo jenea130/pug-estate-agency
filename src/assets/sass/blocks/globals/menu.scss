@@ -48,9 +48,9 @@
   }
   &__has-children {
     position: relative;
+    // pointer-events: initial;
     &:hover .menu__sub-menu {
-      opacity: 1;
-      // pointer-events: initial;
+      display: block;
     }
   }
   &__sub-menu {
@@ -59,7 +59,7 @@
     left: 2.2rem;
     width: 24.7rem;
     background: var(--color-bg);
-    opacity: 0;
+    display: none;
     // pointer-events: none;
     border: 1px solid #979797;
     background: var(--color-bg);
@@ -107,6 +107,26 @@
       line-height: normal;
       color: #fff;
       text-transform: uppercase;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__has-children {
+      position: relative;
+      &:hover {
+        margin-bottom: 10rem;
+      }
+    }
+    .menu__sub-menu {
+      width: 26rem;
+      border: none;
+      display: none;
+      & a {
+        font-family: var(--font-2);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: normal;
+        color: #fff;
+      }
     }
   }
 }
