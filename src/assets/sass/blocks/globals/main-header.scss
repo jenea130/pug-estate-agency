@@ -1,14 +1,14 @@
 .main-header {
   position: relative;
   padding: 1.8rem 0 2.6rem;
-  z-index: 1;
+  z-index: 10;
   &__wrap {
     display: flex;
     align-items: center;
   }
   &__logo {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     margin-right: 12.7rem;
     @media screen and (max-width: 1100px) {
       margin-right: 7rem;
@@ -16,17 +16,19 @@
     
   }
   &__menu {
+    position: relative;
     margin-right: auto;
+    // z-index: 10000000;
   }
   &__btn {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     max-width: 16.5rem;
     color: #000;
   }
   &__lang {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     margin-left: 11.9rem;
     font-family: var(--font-2);
     font-size: 1.4rem;
@@ -45,7 +47,7 @@
   }
   &__phone {
     position: relative;
-    z-index: 1;
+    z-index: 11;
     margin-left: 5.3rem;
     font-family: var(--font-2);
     font-size: 1.6rem;

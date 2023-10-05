@@ -1,7 +1,7 @@
 .sandwich-wrap {
 	display: none;
-	padding: 18px 10px;
-	border-radius: 3px;
+	padding: 1.8rem 0rem;
+	border-radius: 0.3rem;
 	z-index: 1001;
 
 	@media screen and (max-width: 992px) {
@@ -12,8 +12,8 @@
 .sandwich {
 	position: relative;
 	display: block;
-	width: 23px;
-	height: 14px;
+	width: 2.3rem;
+	height: 1.4rem;
 	cursor: pointer;
 }
 
@@ -32,15 +32,15 @@
 }
 
 .sandwich__line--middle {
-	top: 6px;
+	top: 0.6rem;
 }
 
 .sandwich__line--bottom {
-	top: 12px;
+	top: 1.2rem;
 }
 
 .sandwich--active .sandwich__line--top {
-	top: 6px;
+	top: 0.6rem;
 	transform: rotate(45deg);
 }
 
@@ -49,11 +49,15 @@
 }
 
 .sandwich--active .sandwich__line--bottom {
-	top: 6px;
+	top: 0.6rem;
 	transform: rotate(-45deg);
 }
 .sandwich--active {
 	.sandwich__line {
 		background: #fff;
 	}
+}
+
+* {
+	border: 1px solid red;	
 }
