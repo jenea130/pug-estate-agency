@@ -124,3 +124,9 @@ input[type="submit"]:disabled {
 .hide {
   display: none;
 }
+
+.tablet-hide {
+  @media screen and (max-width: 992px) {
+    display: none !important;
+  }
+}
