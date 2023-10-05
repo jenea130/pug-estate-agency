@@ -586,6 +586,18 @@ input[type="submit"]:disabled {
   z-index: 2;
 }
 
+@media screen and (max-width: 992px) {
+  .home-intro__img {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-intro__img {
+    height: 60rem;
+  }
+}
+
 .home-intro__img img {
   position: absolute;
   top: 0;
@@ -709,6 +721,12 @@ input[type="submit"]:disabled {
   z-index: 3;
 }
 
+@media screen and (max-width: 992px) {
+  .home-intro__body {
+    display: none;
+  }
+}
+
 .home-intro__item {
   display: flex;
   justify-content: center;
@@ -716,6 +734,12 @@ input[type="submit"]:disabled {
   gap: 3rem;
   flex: 0 0 35.8rem;
   background: var(--color-bg);
+}
+
+@media screen and (max-width: 992px) {
+  .home-intro__item {
+    flex: 1;
+  }
 }
 
 .home-intro__number {

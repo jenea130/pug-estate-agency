@@ -7,6 +7,12 @@
     position: relative;
     height: 97.1rem;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      height: 70rem;
+    }
+    @media screen and (max-width: 576px) {
+      height: 60rem;
+    }
     img {
       position: absolute;
       top: 0;
@@ -109,6 +115,9 @@
     justify-content: flex-end;
     height: 15rem;
     z-index: 3;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
   }
   &__item {
     display: flex;
@@ -117,6 +126,9 @@
     gap: 3rem;
     flex: 0 0 35.8rem;
     background: var(--color-bg);
+    @media screen and (max-width: 992px) {
+      flex: 1;
+    }
   }
   &__number {
     font-family: var(--font-2);
